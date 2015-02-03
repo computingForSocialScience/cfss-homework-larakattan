@@ -40,9 +40,9 @@ def zip_code_barchart():
 			else: 
 				contractor_zip[zipcode] += 1
 
-	plt.bar(range(len(contractor_zip)), contractor_zip.values(), align='center')
-	plt.xticks(range(len(contractor_zip)), contractor_zip.keys())
-	plt.savefig('histogram_of_zipcodes.jpg')
+	matplotlib.pyplot.bar(range(len(contractor_zip)), contractor_zip.values(), align='center')
+	matplotlib.pyplot.xticks(range(len(contractor_zip)), contractor_zip.keys())
+	matplotlib.pyplot.savefig('histogram_of_zipcodes.jpg')
 	
 if sys.argv[1] == "latlong":
 	print get_avg_latlng()
