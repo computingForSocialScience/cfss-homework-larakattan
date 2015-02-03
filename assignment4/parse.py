@@ -14,3 +14,13 @@ def readCSV(filename):
 
 
 ### enter your code below
+def get_avg_latlng():
+	data = readCSV("permits_hydepark.csv") 
+	number = 0.0
+	longitude = 0.0
+	latitude = 0.0
+	for datum in data:
+		longitude += float(line[-2]) 
+		latitude += float(line[-3])
+		number += 1.0
+	return latitude/number, longitude/number
