@@ -29,7 +29,7 @@ def zip_code_barchart():
 	data = readCSV("permits.csv")
 	contractor_zip = {}
 	for datum in data: 
-		zips = [datum[28], datum[35], datum[42], datum[49], datum[56], datum[63], datum[70], datum[77], datum[84], datum[91], datum[98], datum[105], datum[112], datum[119], datum[126]]
+		all_zipcodes = [datum[28], datum[35], datum[42], datum[49], datum[56], datum[63], datum[70], datum[77], datum[84], datum[91], datum[98], datum[105], datum[112], datum[119], datum[126]]
 		for zipcode in all_zipcodes:
 			if zipcode == "": 
 				continue
