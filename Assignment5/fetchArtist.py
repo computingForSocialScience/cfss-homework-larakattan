@@ -35,7 +35,7 @@ def fetchArtistInfo(artist_id):
         artist_info_dict['followers']=artist_info['followers']['total']
         artist_info_dict['genres']=artist_info['genres']
         artist_info_dict['id']=artist_id
-        artist_info_dict['name']=artist_info['name']
+        artist_info_dict['name']=str(artist_info['name']) 
         artist_info_dict['popularity']=artist_info['popularity']
         # print (artist_info_dict)
 
