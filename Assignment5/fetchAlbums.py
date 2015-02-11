@@ -32,7 +32,7 @@ def fetchAlbumInfo(album_id):
         return('')
     else:
         album_info_dict = {}
-        album_info_dict['artist_id']=album_info['artists'][0]['name']
+        album_info_dict['artist_id']=str(album_info['artists'][0]['id'])
         album_info_dict['name']=album_info['name']
         album_info_dict['album_id']=album_id
         album_info_dict['year']=album_info['release_date'][0:4]
