@@ -33,5 +33,3 @@ if __name__ == '__main__':
     writeAlbumsTable(album_info_list)
 
     plotBarChart()
-
-    print ("done")
