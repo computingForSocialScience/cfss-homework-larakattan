@@ -25,13 +25,26 @@ def degree(edgeList, in_or_out):
 
 	return
 
-def combineEdgelists(edgeList1, edgeList2):
-	pass
+def combineEdgeLists(edgeList1, edgeList2):
+	
+	return pd.merge(edgeList1,edgeList2,how='outer').drop_duplicates()
 
 def pandasToNetworkX(edgeList):
 
-	pass
+	graph = nx.DiGraph()
+
+	for i,j in edgeList.to_records(index=False):
+		graph.add_edge(i,j)
+
+	return (graph)
 
 def randomCentralNode(inputDiGraph):
 
-	pass
+	eigenval = nx.eigenvector_centrality(inputDiGraph)
+
+	total = sum(eigenval.values())
+
+	for i in eigenval:
+		eigenval[i]=eigenval[i]/float(total)
+
+	return (np.random.choice(eigenval.keys(), p = eigenval.values()))
