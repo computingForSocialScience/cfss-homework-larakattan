@@ -47,10 +47,10 @@ def getDepthEdges(artistID, depth):
 		next_iteration_artists = []
 		counter+=1 
 
-	return list(set(edges))
+	return list(set(edges)) # set gets rid of duplicates
 
 def getEdgeList(artistID, depth):
-	'''load getDepthEdges into a pandas dataFrame'''
+	'''load getDepthEdges into a pandas dataFrame''' 
 
 	edges_array = np.asarray(getDepthEdges(artistID,depth)) #use numpy to create an array
 
