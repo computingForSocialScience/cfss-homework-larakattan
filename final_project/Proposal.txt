@@ -1,0 +1,16 @@
+Lara Kattan
+
+1. What: I propose to study the economic and demographic changes in Chicago over the last fifteen years (or as many years as 
+it's possible to get economic Census data). Using data on population, payroll, education outcomes (proxied by test scores),
+employment and other economic indicators, overlayed on a map, I will look for patterns that may have public policy relevance. 
+
+2. Why: Chicago has been losing population for more than a decade. This has already resulted in 50 public schools
+being closed and lots of land being empty, especially on the south and west sides, which were stronger hit during the
+recession. This study will have public policy implications, helping policy makers zero in on which parts of the city
+require which services. This will enable better-targeted policy initiatives and more efficient use of public funds. 
+
+3. How: The economic and population data will come from the ACS and other Census Bureau survey instruments, including
+the Economic Census, administered every five years (most recently in 2012). I will also collect data from Chicago 
+datasets on employment, payroll, and other economic indicators. I hope to do some analysis of network effects using
+NetworkX and to possibly run some regressions on education outcomes (proxied by test scores) with covariates on 
+economic health and population changes. For this I aim to use scikit and other Python libraries. 
