@@ -1,0 +1,35 @@
+<html>
+<head><title>Lara Kattan CFSS Final Project</title></head>
+<body>
+
+        <h2>Lara Kattan CFSS Final Project</h2>
+
+        <p>An exploration of the connection between education funding and outcomes for children (proxied by test scores). </p>
+
+        <form action="/" method="POST">
+
+        	<fieldset>
+        		<legend>Which variables should we include in the regression?</legend>
+
+        		<label>Please choose the RHS variables that you would like to be included in your OLS regression. The outcome variable is NAEP test scores.</label><br/><br/>
+
+        		<input type="checkbox" name="variables" value=FRL />Percent of students receiving free or reduced price lunch (poverty proxy)<br/>
+        		<input type="checkbox" name="variables" value=black />Percent Black students<br/>
+        		<input type="checkbox" name="variables" value=hispanic />Percent Hispanic students<br/>
+        		<input type="checkbox" name="variables" value=income />State's median income<br/><br/>
+
+        		<label>Grade level and subject matter:</label><br/>
+        		<input type="radio" name="test" value="g4reading" />Grade 4 Reading<br/>
+        		<input type="radio" name="test" value="g8mathematics" />Grade 8 Mathematics<br/>
+
+
+        	</fieldset>
+
+        	<input type="submit" value="Gimme my regression!" />
+
+        </form>
+
+        <p>Data sources and explanations <a href="/documentation/">here</a>.</p>
+
+</body>
+</html>
